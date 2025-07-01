@@ -22,7 +22,7 @@ let isLoggedIn = false
 // undefined => 
 // symbol => unique
 
-// non primitive data type
+// non primitive data types
 
 // object
 
