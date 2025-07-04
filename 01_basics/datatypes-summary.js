@@ -45,6 +45,29 @@ let myObj = {
 const myfunction = function() {
     console.log("Hello World");
 }
-console.log(typeof myfunction); //datatype function(object)
+//console.log(typeof myfunction); //datatype function(object)
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Memory are of 2 types
+//Stack (Primitive/copy), Heap (Non-Primitive/refrence)
+
+let myName = "Amit";
+let anotherName = myName;
+anotherName = "Ishant";
+console.log(anotherName);
+console.log(myName);
+
+let userOne = {
+    email: "abc@gmail.com",
+    upi: "abc@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = 'xyz@gmail.com';
+
+console.log(userTwo.email);
+console.log(userOne.email);
