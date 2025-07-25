@@ -60,18 +60,41 @@ const users = [
     }
 ]
 
-console.log(users[1].email);
+// console.log(users[1].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
 //get object keys in array
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
 //get object values in array
-console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));
 
 //separate array in pair (obj key:pair)
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 //check key exist in object return in boolean
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+//console.log(course.courseInstructor);
+
+//object destructure
+const {courseInstructor: instructor} = course
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//     "name": "Ishant",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+//https://api.github.com/users/ishantji
