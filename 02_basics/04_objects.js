@@ -31,11 +31,47 @@ const obj4 = {5: "a", 6: "v"}
 //not use
 //const obj3 = {obj1,obj2};
 
-//by using assign
+//1. by using assign
 //const obj3 = Object.assign(obj1,obj2);
 // const obj3 = Object.assign({},obj1,obj2,obj4);
 // console.log(obj3);
-//by using spread operator
+
+//2. by using spread operator
 // const obj3 = {...obj1, ...obj2};
 // console.log(obj3);
 
+//3. 
+const users = [
+    {
+        id: 1,
+        email: "i@gmail.com"
+    },
+    {
+        id: 1,
+        email: "i@gmail.com"
+    },
+    {
+        id: 1,
+        email: "i@gmail.com"
+    },
+    {
+        id: 1,
+        email: "i@gmail.com"
+    }
+]
+
+console.log(users[1].email);
+
+console.log(tinderUser);
+
+//get object keys in array
+console.log(Object.keys(tinderUser));
+
+//get object values in array
+console.log(Object.values(tinderUser));
+
+//separate array in pair (obj key:pair)
+console.log(Object.entries(tinderUser));
+
+//check key exist in object return in boolean
+console.log(tinderUser.hasOwnProperty('isLogged'));
