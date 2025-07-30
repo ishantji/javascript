@@ -91,6 +91,7 @@ const {courseInstructor: instructor} = course
 //console.log(courseInstructor);
 console.log(instructor);
 
+//json key value both are string
 // {
 //     "name": "Ishant",
 //     "coursename": "js in hindi",
