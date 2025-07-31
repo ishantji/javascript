@@ -11,7 +11,7 @@ function sayMyName() {
 //function execution/calling
 //sayMyName();
 
-//add of two number using function parameters
+//addition number using function with parameters
 // function addTwoNumbers(num1, num2) {
 //     console.log(num1 + num2);
 // }
@@ -37,6 +37,38 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`;
 }
 
-console.log(loginUserMessage('Ishant'));
-//undedined without parameter
+//console.log(loginUserMessage('Ishant'));
+//undefined without parameter
 //console.log(loginUserMessage());
+
+//spread operator holds all parameters in array
+//while before any parametres reduce the array count
+function calculateCartPrice(val1, val2, ...num1){
+    return num1;
+}
+
+//console.log(calculateCartPrice(200, 400, 500, 300, 800));
+
+//pass object in function
+const user = {
+    username: "Ishant",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+// handleObject(user);
+// handleObject({
+//     username: 'Ram',
+//     price: 700
+// });
+
+//pass array in function
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 100, 300, 800]));
