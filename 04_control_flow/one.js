@@ -28,6 +28,31 @@ const temperature = 39
 // console.log(`User Power: ${power}`);
 
 
-const balance = 1000
+//const balance = 1000
 
-if (balance > 500) console.log("Yes above 500"),console.log("test 2");
+//if (balance > 500) console.log("Yes above 500"),console.log("test 2");
+
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if (balance < 750) {
+//     console.log("less than 750");
+// } else if (balance < 900) {
+//     console.log("less than 900");
+// } else {
+//     console.log("less than 1200");
+// }
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoggle = true
+const loggedInFromEmail = false
+
+//user logged in and also have debit card
+if (userLoggedIn && debitCard  &&  2==2) {
+    console.log("Allow to buy course");
+}
+
+//either user logged in from goggle or email
+if (loggedInFromEmail || loggedInFromGoggle) {
+    console.log("User Logged In");
+}
