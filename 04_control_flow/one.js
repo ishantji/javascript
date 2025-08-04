@@ -56,3 +56,7 @@ if (userLoggedIn && debitCard  &&  2==2) {
 if (loggedInFromEmail || loggedInFromGoggle) {
     console.log("User Logged In");
 }
+
+// false == 0  => true
+// false == '' => true
+// 0 == ''     => true
