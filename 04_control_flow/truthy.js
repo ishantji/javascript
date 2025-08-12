@@ -12,7 +12,7 @@ const userEmail = [];
 //false, 0, -0, bigInt 0n, "", null, undefined, NaN
 
 // truthy values
-// "0", 'false', " ", [], {}, function() {}
+// "0", 'false', " ", [], {}, function() {}, true
 
 
 //check array length is empty or not
