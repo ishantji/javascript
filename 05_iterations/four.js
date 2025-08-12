@@ -17,5 +17,5 @@ for (const value of Object.values(language)) {
 }
 
 for (const key of Object.keys(language)) {
-    console.log(languagep[key]);
+    console.log(language[key]);
 }
