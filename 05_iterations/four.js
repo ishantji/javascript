@@ -1,3 +1,7 @@
+//for in 
+
+
+//object
 const language = {
     js: 'Javascript',
     cpp: 'c++',
@@ -6,6 +10,9 @@ const language = {
 }
 
 for (const key in language) {
+   //console.log(key); 
+   //console.log(language[key]); 
+   //console.log(`${key} is for ${language[key]}`);
    // console.log(`${key} shortcut is for ${language[key]}`);
 }
 
@@ -26,9 +33,11 @@ for (const key of Object.keys(language)) {
    // console.log(language[key]);
 }
 
+
+//array return key with for in mostly use for of with array
 const programming = ["js", "rb", "py", "java", "cpp"]
 for (const key in programming) {
-   // console.log(programming[key]);
+  // console.log(programming[key]);
 }
 
 //map is not iteratable
