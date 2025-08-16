@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dom Learning</title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        // console.log(window)
+        // console.log(window.document)
+        // console.log(document)
+        // console.dir(document)
+        // console.log(document.baseURI)
+        // console.log(document.links) //html collections not array
+        // console.log(document.links[2]) // get 2 link
+        // document.getElementById('id_name')
+        // document.getElementById('id_name').innerHTML="<h1>HELLO WORLD</h1>"
+        
+
+        //get element attribute value
+        // document.getElementById('title')
+        // document.getElementById('title').id
+        // document.getElementById('title').class //Not work
+        // document.getElementById('title').className
+        // document.getElementById('title').getAttribute('id')
+        // document.getElementById('title').getAttribute('class')
+
+        //set element attribute with value
+        // document.getElementById('title').setAttribute('myattr','myvalue') // => set attribute myattr to title element
+        // document.getElementById('title').setAttribute('class','myclass') // => override class attribute
+        // document.getElementById('title').setAttribute('class','heading myclass') to resolve add old with new
+        // const title = document.getElementById('title'); // => get title element by id and store in const title
+
+        //styling
+        // title.style.backgroundColor='green'; // => set background color of green
+        // title.style.padding = '15px';  // => set padding of 15px
+        // title.style.borderRadius = '20px';  // => set border radius of 20px
+
+        //get text
+        // title.textContent  // => get text content of element without tags full text which do not support tags
+        // title.innerHTML // => get text content of element with tags inside which support tags
+        // title.innerText // => get text content of element which see on browser which do not support tags
+        
+    </script>
+</body>
+</html>
