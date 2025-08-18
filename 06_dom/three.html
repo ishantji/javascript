@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121;color:#ffF;">
+    
+    <script>
+        //create node list
+
+        //create element
+        const div = document.createElement('div');
+        //add class to element
+        div.className = 'main';
+        //add id to element with random 1 t0 10
+        div.id = Math.round(Math.random()*10+1);
+        console.log(div);
+        //add custom attribute with value
+        div.setAttribute('myatt','myvalue');
+        //add style to element
+        div.style.backgroundColor = 'green';
+        div.style.padding = '12px';
+        //add text to element
+        //div.innerText="My Text";
+        //or
+        const addText = document.createTextNode("Chai aur code")
+        div.appendChild(addText); 
+        document.body.appendChild(div);     
+    </script>
+</body>
+</html>

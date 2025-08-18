@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121;color:#fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <script>
+        //it will tarvsing all li inside ul time taking
+        function addLanguage(langName) {
+            const myelement = document.createElement('li');
+            myelement.innerHTML = langName;
+            const parent = document.querySelector('.language').appendChild(myelement);
+        }
+        addLanguage('Java');
+        addLanguage('Phython');
+        addLanguage('GO');
+
+        //it is optimize apporoach to do so
+        function addOptiLanaguage(langName) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li);
+        }
+
+        addOptiLanaguage('Php');
+        addOptiLanaguage('React');
+
+        //edit 
+        const thirdLang = document.querySelector('li:nth-child(3)');
+        //thirdLang.innerHTML = "C++";
+        //console.log(document.querySelector('li:nth-child(3)').innerText);
+        const newli = document.createElement('li');
+        newli.textContent = 'C++';
+        thirdLang.replaceWith(newli);
+
+        //edit
+        const firstLanguage = document.querySelector('li:first-child');
+        // console.log(firstLanguage);
+        firstLanguage.outerHTML = '<li>.Net</li>';
+        
+        //remove
+        const lanstLanguage = document.querySelector('li:last-child')
+        lanstLanguage.remove();
+        
+    </script>
+</body>
+</html>
