@@ -10,16 +10,18 @@
         <li>Javascript</li>
     </ul>
     <script>
-        //it will tarvsing all li inside ul time taking
+
+        //Add
+        //it will traversing all li inside ul time taking not good approach
         function addLanguage(langName) {
             const myelement = document.createElement('li');
             myelement.innerHTML = langName;
-            const parent = document.querySelector('.language').appendChild(myelement);
+            document.querySelector('.language').appendChild(myelement);
         }
         addLanguage('Java');
-        addLanguage('Phython');
+        addLanguage('Python');
         addLanguage('GO');
-
+        
         //it is optimize apporoach to do so
         function addOptiLanaguage(langName) {
             const li = document.createElement('li');
@@ -30,14 +32,15 @@
         addOptiLanaguage('Php');
         addOptiLanaguage('React');
 
-        //edit 
-        const thirdLang = document.querySelector('li:nth-child(3)');
+        //Edit 
+        const thirdLang = document.querySelector('li:nth-child(2)');
         //thirdLang.innerHTML = "C++";
+               //or
         //console.log(document.querySelector('li:nth-child(3)').innerText);
         const newli = document.createElement('li');
         newli.textContent = 'C++';
         thirdLang.replaceWith(newli);
-
+        
         //edit
         const firstLanguage = document.querySelector('li:first-child');
         // console.log(firstLanguage);
