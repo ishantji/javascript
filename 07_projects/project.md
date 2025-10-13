@@ -1,16 +1,25 @@
-#project solution
+# Projects related to DOM
 
-#project1
+## project link
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-ej1dwyhz?file=index.html)
 
-```
+#  Solution code
+
+## project1
+
+```javascript
 const buttons = document.querySelectorAll('.button');
+//console.log(buttons);
+
 const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
   //console.log(button);
+
+  //Event Listner
   button.addEventListener('click', function (e) {
     //console.log(e);
-    //console.log(e.target.id);
+    console.log(e.target.id);
     if (e.target.id == 'grey') {
       body.style.backgroundColor = e.target.id;
     }
@@ -28,5 +37,6 @@ buttons.forEach(function (button) {
     }
   });
 });
+
 
 ```
