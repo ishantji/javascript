@@ -11,13 +11,16 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    //execute code at every minute after 1 minute
+    //execute code at every second after 1 second
+    let runConsole;
     const setDate = function(str){
         console.log(str,Date.now())
     }
-    
+    function myfunction () {
+        runConsole = setInterval(setDate, 1000, "Ishant");
+    }
     document.querySelector("#start").addEventListener('click', function(){
-        let runConsole = setInterval(setDate, 1000, "hi")
+        myfunction();
         console.log("Start")
     })
     document.querySelector("#stop").addEventListener('click', function(){
