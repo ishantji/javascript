@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .mycard{
+            display: none;
+            border: 1px solid white;
+            text-align: center; 
+            color:#f1f1f1;
+            width:400px;
+        }
+    </style>
+  </head>
+  <body style="background-color: #212121">
+    <button id="mybtn">Show Data</button>
+    <div class="mycard">
+      <img src="" alt="myimage" id="myimage"/>
+      <h2 id="myfollwers"></h2>
+    </div>
+  </body>
+  <script>
+    const mybtn = document.getElementById("mybtn");
+    mybtn.addEventListener("click", function (e) {
+       
+        const myimage = document.querySelector('#myimage');
+        const myfollowers = document.querySelector('#myfollwers');
+        const requestUrl = "https://api.github.com/users/ishantji";
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", requestUrl);
+        //console.log(xhr.readyState);
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+             document.querySelector('.mycard').style.display='block';
+             document.querySelector('#mybtn').style.display='none';
+            if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            //console.log(typeof data);
+            myfollowers.innerHTML = `Followers: ${data.followers}`;
+            const my_image_url = data.avatar_url;
+            myimage.setAttribute('src',my_image_url);
+            //console.log(this.responseText);
+            }
+        };
+        xhr.send();
+        //console.log(xhr.readyState);
+    });
+  </script>
+</html>
